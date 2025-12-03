@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Beauty Salon | Glow & Shine Spa</title>
+<style>
+    body{
+        margin: 0;
+        font-family: Cambria, sans-serif;
+        background: #fff8f9;
+    }
+
+    header{
+        background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') no-repeat center/cover;
+        height: 70vh;
+        color: white;
+        text-align: center;
+        padding-top: 180px;
+        font-size: 45px;
+        text-shadow: 2px 2px 8px black;
+    }
+
+    nav{
+        background: #ff6fa8;
+        padding: 15px;
+        text-align: center;
+    }
+    nav a{
+        color: white;
+        margin: 0 20px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .container{
+        width: 90%;
+        margin: auto;
+        padding: 40px 0;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 35px;
+        color: #e84393;
+        margin-bottom: 20px;
+    }
+
+    /* SERVICES */
+    .services{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .service-box{
+        width: 30%;
+        background: white;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px #ffbad5;
+        text-align: center;
+    }
+
+    /* GALLERY */
+    .gallery img{
+        width: 30%;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px #ffbad5;
+    }
+
+    /* BOOKING FORM */
+    form{
+        width: 45%;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px #ffc4d8;
+    }
+    input, select, textarea{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: 1px solid #ff8fbf;
+    }
+    button{
+        background: #ff5f9e;
+        color: white;
+        padding: 12px;
+        width: 99%;
+        border: none;
+        font-size: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    footer{
+        background: #ff6fa8;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    Glow & Shine Beauty Salon
+</header>
+
+<nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#book">Book Appointment</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- SERVICES -->
+<div class="container" id="services">
+    <h2>Our Beauty Services</h2>
+    <div class="services">
+        <div class="service-box">
+            <h3>💆 Facial Treatment</h3>
+            <p>Deep cleansing & instant glow facials.</p>
+        </div>
+        <div class="service-box">
+            <h3>💇 Hair Styling</h3>
+            <p>Haircut, smoothening, coloring & more.</p>
+        </div>
+        <div class="service-box">
+            <h3>💅 Manicure / Pedicure</h3>
+            <p>Full luxury spa for hands & feet.</p>
+        </div>
+    </div>
+</div>
+
+<!-- GALLERY -->
+<div class="container" id="gallery">
+    <h2>Before & After Gallery</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="">
+        <img src="https://images.unsplash.com/photo-1556228578-1c094f2243a1" alt="">
+        <img src="https://images.unsplash.com/photo-1559599179-54243a1c2a6e" alt="">
+    </div>
+</div>
+
+<!-- BOOK APPOINTMENT -->
+<div class="container" id="book">
+    <h2>Book an Appointment</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="number" placeholder="Phone Number" required>
+
+        <select>
+            <option>Select Service</option>
+            <option>Facial</option>
+            <option>Hair Style</option>
+            <option>Manicure / Pedicure</option>
+        </select>
+
+        <textarea placeholder="Any special request?" rows="4"></textarea>
+
+        <button>Book Now</button>
+    </form>
+</div>
+
+<!-- CONTACT -->
+<footer id="contact">
+    <h3>Contact Us</h3>
+    <p>📍 Address: 12 skydrive Street, Mumbai</p>
+    <p>📞 Phone: +91 98765 43210</p>
+    <p>💌 Email: glowshine@salon.com</p>
+</footer>
+
+</body>
+</html>
